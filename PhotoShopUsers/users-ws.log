@@ -1,0 +1,370 @@
+2020-03-25 19:01:14.056  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8085
+2020-03-25 19:01:34.643  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PhotoAppApiConfigServer, profiles=[default], label=null, version=796ca62435e3e7c7e88741c14a64dae65649367b, state=null
+2020-03-25 19:01:34.646  INFO [users-ws,,,] 20604 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/sirtyilas/PhotoAppConfigData/application.properties'}]
+2020-03-25 19:01:34.860  INFO [users-ws,,,] 20604 --- [restartedMain] c.m.p.u.P.PhotoShopUsersApplication      : No active profile set, falling back to default profiles: default
+2020-03-25 19:01:47.023  INFO [users-ws,,,] 20604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-25 19:01:47.350  INFO [users-ws,,,] 20604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 324ms. Found 1 JPA repository interfaces.
+2020-03-25 19:01:49.753  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e5016288-9aef-3e65-adcd-9ce6a1e18a7f
+2020-03-25 19:01:50.030  INFO [users-ws,,,] 20604 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-03-25 19:01:50.032  INFO [users-ws,,,] 20604 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-03-25 19:01:50.062  INFO [users-ws,,,] 20604 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-03-25 19:01:50.822  INFO [users-ws,,,] 20604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 19:01:50.843  INFO [users-ws,,,] 20604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 19:01:51.010  INFO [users-ws,,,] 20604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 19:02:00.505  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-25 19:02:00.536  INFO [users-ws,,,] 20604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 19:02:00.538  INFO [users-ws,,,] 20604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 19:02:00.916  INFO [users-ws,,,] 20604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 19:02:00.918  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 25992 ms
+2020-03-25 19:02:02.443  WARN [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-25 19:02:02.444  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-25 19:02:02.448  INFO [users-ws,,,] 20604 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ac65a41
+2020-03-25 19:02:03.331  INFO [users-ws,,,] 20604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-03-25 19:02:03.849  INFO [users-ws,,,] 20604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-03-25 19:02:03.856  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/postgres'
+2020-03-25 19:02:08.212  WARN [users-ws,,,] 20604 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@16c6d3fc}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-03-25 19:02:17.037  INFO [users-ws,,,] 20604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-25 19:02:17.177  INFO [users-ws,,,] 20604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-25 19:02:19.008  INFO [users-ws,,,] 20604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-25 19:02:19.012  INFO [users-ws,,,] 20604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-25 19:02:19.171  WARN [users-ws,,,] 20604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-25 19:02:21.508  WARN [users-ws,,,] 20604 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-25 19:02:22.188  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-25 19:02:23.867  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5511dbd9, org.springframework.security.web.context.SecurityContextPersistenceFilter@697b578e, org.springframework.security.web.header.HeaderWriterFilter@2adfd5a1, org.springframework.security.web.authentication.logout.LogoutFilter@faedf23, com.matyila.photoshop.users.PhotoShopUsers.security.AuthenticationFilter@687b396a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a12970, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74915b99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3730570a, org.springframework.security.web.session.SessionManagementFilter@4093d4ec, org.springframework.security.web.access.ExceptionTranslationFilter@20e213ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4531afcb]
+2020-03-25 19:02:24.365  WARN [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-25 19:02:24.367  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-25 19:02:25.679  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-25 19:02:29.379  INFO [users-ws,,,] 20604 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-03-25 19:02:39.190  WARN [users-ws,,,] 20604 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-03-25 19:02:48.393  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-25 19:02:49.180  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2020-03-25 19:02:49.265  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-25 19:02:49.267  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-03-25 19:02:49.267  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-03-25 19:02:52.436  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8085
+2020-03-25 19:03:03.160  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PhotoAppApiConfigServer, profiles=[default], label=null, version=796ca62435e3e7c7e88741c14a64dae65649367b, state=null
+2020-03-25 19:03:03.163  INFO [users-ws,,,] 20604 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/sirtyilas/PhotoAppConfigData/application.properties'}]
+2020-03-25 19:03:04.681  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-03-25 19:03:04.942  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4aa5bd90:0/SimpleConnection@322ca2e2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56562]
+2020-03-25 19:03:05.177  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2020-03-25 19:03:05.257  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-25 19:03:05.339  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-25 19:03:05.462  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-25 19:03:05.463  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-25 19:03:05.502  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-25 19:03:05.505  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-25 19:03:06.828  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:03:06.848  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-25 19:03:06.849  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-25 19:03:06.849  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-25 19:03:06.850  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-25 19:03:06.850  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-25 19:03:06.850  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-25 19:03:06.851  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-25 19:03:06.941  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-25 19:03:06.947  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-25 19:03:06.952  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-25 19:03:06.977  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1585155786975 with initial instances count: 3
+2020-03-25 19:03:07.018  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-03-25 19:03:07.020  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585155787020, current=UP, previous=STARTING]
+2020-03-25 19:03:07.022  INFO [users-ws,,,] 20604 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e0632a84a8ebb65b169a915a91699d6e: registering service...
+2020-03-25 19:03:07.102  INFO [users-ws,,,] 20604 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e0632a84a8ebb65b169a915a91699d6e - registration status: 204
+2020-03-25 19:03:07.177  INFO [users-ws,,,] 20604 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g, bound to: springCloudBus
+2020-03-25 19:03:07.424  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g.errors' has 1 subscriber(s).
+2020-03-25 19:03:07.424  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g.errors' has 2 subscriber(s).
+2020-03-25 19:03:07.446  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g'
+2020-03-25 19:03:07.651  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-25 19:03:07.657  INFO [users-ws,,,] 20604 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2020-03-25 19:03:10.619  INFO [users-ws,,,] 20604 --- [restartedMain] c.m.p.u.P.PhotoShopUsersApplication      : Started PhotoShopUsersApplication in 127.066 seconds (JVM running for 3414.429)
+2020-03-25 19:03:10.637  INFO [users-ws,,,] 20604 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-25 19:08:06.900  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:13:06.944  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:18:06.950  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:23:07.004  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:28:07.007  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:29:25.481  INFO [users-ws,,,] 20604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-25 19:29:25.489  INFO [users-ws,,,] 20604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-25 19:29:26.209  INFO [users-ws,,,] 20604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 717 ms
+2020-03-25 19:29:26.833  INFO [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.service.UsersServiceImpl       : Before calling album sevice clint
+2020-03-25 19:29:26.846 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] ---> GET http://localhost:8089/users/b84882aa-9485-4fd9-baf9-368e2ca3452d/albums HTTP/1.1
+2020-03-25 19:29:26.847 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] ---> END HTTP (0-byte body)
+2020-03-25 19:29:27.666 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] <--- HTTP/1.1 200 (818ms)
+2020-03-25 19:29:27.666 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] content-type: application/json;charset=UTF-8
+2020-03-25 19:29:27.667 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] date: Wed, 25 Mar 2020 17:29:27 GMT
+2020-03-25 19:29:27.667 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] transfer-encoding: chunked
+2020-03-25 19:29:27.667 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] 
+2020-03-25 19:29:27.711 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] [{"albumId":"album1Id","userId":"b84882aa-9485-4fd9-baf9-368e2ca3452d","name":"album 1 name","description":"album 1 description"},{"albumId":"album2Id","userId":"b84882aa-9485-4fd9-baf9-368e2ca3452d","name":"album 2 name","description":"album 2 description"}]
+2020-03-25 19:29:27.712 DEBUG [users-ws,bfde6dc319651607,bfde6dc319651607,true] 20604 --- [http-nio-8080-exec-1] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] <--- END HTTP (259-byte body)
+2020-03-25 19:29:28.562  WARN [users-ws,,,] 20604 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@16c6d3fc}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-03-25 19:29:28.596  WARN [users-ws,,,] 20604 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@16c6d3fc}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 9 common frames omitted
+
+2020-03-25 19:29:32.027  INFO [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.service.UsersServiceImpl       : Before calling album sevice clint
+2020-03-25 19:29:32.030 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] ---> GET http://localhost:8089/users/b84882aa-9485-4fd9-baf9-368e2ca3452d/albums HTTP/1.1
+2020-03-25 19:29:32.032 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] ---> END HTTP (0-byte body)
+2020-03-25 19:29:32.073 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] <--- HTTP/1.1 200 (40ms)
+2020-03-25 19:29:32.075 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] content-type: application/json;charset=UTF-8
+2020-03-25 19:29:32.075 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] date: Wed, 25 Mar 2020 17:29:32 GMT
+2020-03-25 19:29:32.076 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] transfer-encoding: chunked
+2020-03-25 19:29:32.077 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] 
+2020-03-25 19:29:32.078 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] [{"albumId":"album1Id","userId":"b84882aa-9485-4fd9-baf9-368e2ca3452d","name":"album 1 name","description":"album 1 description"},{"albumId":"album2Id","userId":"b84882aa-9485-4fd9-baf9-368e2ca3452d","name":"album 2 name","description":"album 2 description"}]
+2020-03-25 19:29:32.079 DEBUG [users-ws,ba2a39ad32531ee1,ba2a39ad32531ee1,true] 20604 --- [http-nio-8080-exec-3] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] <--- END HTTP (259-byte body)
+2020-03-25 19:33:07.009  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:38:07.011  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:41:50.770  INFO [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.service.UsersServiceImpl       : Before calling album sevice clint
+2020-03-25 19:41:50.782 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] ---> GET http://localhost:8089/users/b84882aa-9485-4fd9-baf9-368e2ca3452d/albums HTTP/1.1
+2020-03-25 19:41:50.783 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] ---> END HTTP (0-byte body)
+2020-03-25 19:41:51.012 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] <--- HTTP/1.1 200 (228ms)
+2020-03-25 19:41:51.013 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] content-type: application/json;charset=UTF-8
+2020-03-25 19:41:51.014 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] date: Wed, 25 Mar 2020 17:41:50 GMT
+2020-03-25 19:41:51.014 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] transfer-encoding: chunked
+2020-03-25 19:41:51.014 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] 
+2020-03-25 19:41:51.019 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] [{"albumId":"album1Id","userId":"b84882aa-9485-4fd9-baf9-368e2ca3452d","name":"album 1 name","description":"album 1 description"},{"albumId":"album2Id","userId":"b84882aa-9485-4fd9-baf9-368e2ca3452d","name":"album 2 name","description":"album 2 description"}]
+2020-03-25 19:41:51.019 DEBUG [users-ws,0d16e7c2c80d8d7b,0d16e7c2c80d8d7b,true] 20604 --- [http-nio-8080-exec-5] c.m.p.u.P.data.AlbumsServiceClient       : [AlbumsServiceClient#getAlbums] <--- END HTTP (259-byte body)
+2020-03-25 19:43:07.015  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:48:07.018  INFO [users-ws,,,] 20604 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:52:49.746  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2020-03-25 19:52:49.751  WARN [users-ws,,,] 20604 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585158769751, current=DOWN, previous=UP]
+2020-03-25 19:52:49.756  INFO [users-ws,,,] 20604 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e0632a84a8ebb65b169a915a91699d6e: registering service...
+2020-03-25 19:52:49.875  INFO [users-ws,,,] 20604 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e0632a84a8ebb65b169a915a91699d6e - registration status: 204
+2020-03-25 19:52:50.215  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-03-25 19:52:50.440  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-03-25 19:52:50.445  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g'
+2020-03-25 19:52:53.389  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g.errors' has 1 subscriber(s).
+2020-03-25 19:52:53.394  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.pvCwEw9gSZ2OmIJG19wL7g.errors' has 0 subscriber(s).
+2020-03-25 19:52:53.423  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-25 19:52:53.424  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-03-25 19:52:53.427  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2020-03-25 19:52:53.496  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-25 19:52:53.652  INFO [users-ws,,,] 20604 --- [Thread-23] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-03-25 19:52:53.677  INFO [users-ws,,,] 20604 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-25 19:52:56.100  INFO [users-ws,,,] 20604 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-03-25 19:52:56.317  INFO [users-ws,,,] 20604 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-03-25 19:52:56.437  INFO [users-ws,,,] 20604 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-03-25 19:53:06.839  INFO [users-ws,,,] 20604 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-03-25 19:53:06.882  INFO [users-ws,,,] 20604 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e0632a84a8ebb65b169a915a91699d6e - deregister  status: 200
+2020-03-25 19:53:06.935  INFO [users-ws,,,] 20604 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-03-25 19:53:16.634  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8085
+2020-03-25 19:53:21.932  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PhotoAppApiConfigServer, profiles=[default], label=null, version=796ca62435e3e7c7e88741c14a64dae65649367b, state=null
+2020-03-25 19:53:21.934  INFO [users-ws,,,] 20604 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/sirtyilas/PhotoAppConfigData/application.properties'}]
+2020-03-25 19:53:22.056  INFO [users-ws,,,] 20604 --- [restartedMain] c.m.p.u.P.PhotoShopUsersApplication      : No active profile set, falling back to default profiles: default
+2020-03-25 19:53:27.024  INFO [users-ws,,,] 20604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-25 19:53:27.104  INFO [users-ws,,,] 20604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
+2020-03-25 19:53:28.020  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e5016288-9aef-3e65-adcd-9ce6a1e18a7f
+2020-03-25 19:53:28.113  INFO [users-ws,,,] 20604 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-03-25 19:53:28.114  INFO [users-ws,,,] 20604 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-03-25 19:53:28.137  INFO [users-ws,,,] 20604 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-03-25 19:53:28.453  INFO [users-ws,,,] 20604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 19:53:28.518  INFO [users-ws,,,] 20604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 19:53:28.627  INFO [users-ws,,,] 20604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 19:53:32.740  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-25 19:53:32.941  INFO [users-ws,,,] 20604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 19:53:32.947  INFO [users-ws,,,] 20604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 19:53:33.477  INFO [users-ws,,,] 20604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 19:53:33.479  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11340 ms
+2020-03-25 19:53:34.917  WARN [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-25 19:53:34.918  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-25 19:53:34.927  INFO [users-ws,,,] 20604 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@406f213
+2020-03-25 19:53:36.367  INFO [users-ws,,,] 20604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-03-25 19:53:37.536  INFO [users-ws,,,] 20604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-03-25 19:53:37.538  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/postgres'
+2020-03-25 19:53:39.887  WARN [users-ws,,,] 20604 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@58c5aa6b}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-03-25 19:53:43.990  INFO [users-ws,,,] 20604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-25 19:53:44.044  INFO [users-ws,,,] 20604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-03-25 19:53:44.440  INFO [users-ws,,,] 20604 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-25 19:53:44.441  INFO [users-ws,,,] 20604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-25 19:53:44.550  WARN [users-ws,,,] 20604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-25 19:53:45.620  WARN [users-ws,,,] 20604 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-25 19:53:45.893  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-25 19:53:46.466  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e9c02f2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a4fcb06, org.springframework.security.web.header.HeaderWriterFilter@76eaac7b, org.springframework.security.web.authentication.logout.LogoutFilter@465d7961, com.matyila.photoshop.users.PhotoShopUsers.security.AuthenticationFilter@7b84f6a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13403cf2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b141a32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@113a9164, org.springframework.security.web.session.SessionManagementFilter@7aa45873, org.springframework.security.web.access.ExceptionTranslationFilter@50feb701, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e2c5a45]
+2020-03-25 19:53:46.623  WARN [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-25 19:53:46.624  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-25 19:53:47.426  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-25 19:53:49.088  INFO [users-ws,,,] 20604 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-03-25 19:53:53.444  WARN [users-ws,,,] 20604 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-03-25 19:53:55.438  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-25 19:53:55.765  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2020-03-25 19:53:55.803  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-25 19:53:55.804  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-03-25 19:53:55.804  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-03-25 19:53:57.836  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8085
+2020-03-25 19:54:01.783  INFO [users-ws,,,] 20604 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=PhotoAppApiConfigServer, profiles=[default], label=null, version=796ca62435e3e7c7e88741c14a64dae65649367b, state=null
+2020-03-25 19:54:01.783  INFO [users-ws,,,] 20604 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/sirtyilas/PhotoAppConfigData/application.properties'}]
+2020-03-25 19:54:01.868  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-03-25 19:54:01.960  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#41a2f356:0/SimpleConnection@1f46d1f0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58722]
+2020-03-25 19:54:01.983  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2020-03-25 19:54:01.993  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-25 19:54:02.002  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-25 19:54:02.015  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-25 19:54:02.015  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-25 19:54:02.016  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-25 19:54:02.016  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-25 19:54:02.303  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 19:54:02.306  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-25 19:54:02.306  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-25 19:54:02.306  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-25 19:54:02.306  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-25 19:54:02.306  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-25 19:54:02.306  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-25 19:54:02.307  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-25 19:54:02.327  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-25 19:54:02.330  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-25 19:54:02.331  INFO [users-ws,,,] 20604 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-25 19:54:02.337  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1585158842336 with initial instances count: 3
+2020-03-25 19:54:02.355  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-03-25 19:54:02.355  INFO [users-ws,,,] 20604 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585158842355, current=UP, previous=STARTING]
+2020-03-25 19:54:02.357  INFO [users-ws,,,] 20604 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e57c320f6a478536837d1d3f3a16a12b: registering service...
+2020-03-25 19:54:02.403  INFO [users-ws,,,] 20604 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:e57c320f6a478536837d1d3f3a16a12b - registration status: 204
+2020-03-25 19:54:02.438  INFO [users-ws,,,] 20604 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.XEzcGoGCTpOSbPyg1kQmwA, bound to: springCloudBus
+2020-03-25 19:54:02.475  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.XEzcGoGCTpOSbPyg1kQmwA.errors' has 1 subscriber(s).
+2020-03-25 19:54:02.475  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.XEzcGoGCTpOSbPyg1kQmwA.errors' has 2 subscriber(s).
+2020-03-25 19:54:02.483  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.XEzcGoGCTpOSbPyg1kQmwA'
+2020-03-25 19:54:02.573  INFO [users-ws,,,] 20604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-25 19:54:02.574  INFO [users-ws,,,] 20604 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2020-03-25 19:54:04.711  INFO [users-ws,,,] 20604 --- [restartedMain] c.m.p.u.P.PhotoShopUsersApplication      : Started PhotoShopUsersApplication in 53.795 seconds (JVM running for 6468.521)
+2020-03-25 19:54:04.716  INFO [users-ws,,,] 20604 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-25 20:02:56.487  INFO 18336 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8085
+2020-03-25 20:02:58.847  INFO 18336 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8085. Will be trying the next url if available
+2020-03-25 20:02:58.849  WARN 18336 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8085/PhotoAppApiConfigServer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-25 20:02:58.861  INFO 18336 --- [restartedMain] c.m.p.u.P.PhotoShopUsersApplication      : No active profile set, falling back to default profiles: default
+2020-03-25 20:03:01.355  WARN 18336 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+2020-03-25 20:03:02.094  INFO 18336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-25 20:03:02.649  INFO 18336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 522ms. Found 1 JPA repository interfaces.
+2020-03-25 20:03:02.955  WARN 18336 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+2020-03-25 20:03:03.227  WARN 18336 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-03-25 20:03:03.313  WARN 18336 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-03-25 20:03:04.268  INFO 18336 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f064977c-a226-3f47-8d3c-b6fae3de4437
+2020-03-25 20:03:05.050  INFO 18336 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-03-25 20:03:05.066  INFO 18336 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-03-25 20:03:05.078  INFO 18336 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-03-25 20:03:06.094  INFO 18336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 20:03:06.109  INFO 18336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 20:03:06.216  INFO 18336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-25 20:03:09.519  INFO 18336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-25 20:03:09.545  INFO 18336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-25 20:03:09.545  INFO 18336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-25 20:03:09.907  INFO 18336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-25 20:03:09.907  INFO 18336 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11013 ms
+2020-03-25 20:03:10.252  WARN 18336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-25 20:03:10.252  INFO 18336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-25 20:03:10.302  INFO 18336 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@55182bed
+2020-03-25 20:03:10.586  INFO 18336 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-25 20:03:11.514  INFO 18336 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-25 20:03:11.562  INFO 18336 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-03-25 20:03:16.196  INFO 18336 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-25 20:03:16.588  INFO 18336 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-25 20:03:17.369  INFO 18336 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-25 20:03:18.532  INFO 18336 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-25 20:03:21.406  INFO 18336 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-25 20:03:21.428  INFO 18336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-25 20:03:21.512  INFO 18336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-25 20:03:23.263  WARN 18336 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-25 20:03:23.868  INFO 18336 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-25 20:03:25.073  INFO 18336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33397a59, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bd158dd, org.springframework.security.web.header.HeaderWriterFilter@7f9121e, org.springframework.security.web.authentication.logout.LogoutFilter@743e1499, com.matyila.photoshop.users.PhotoShopUsers.security.AuthenticationFilter@519dfeaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c096930, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24351882, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e448a70, org.springframework.security.web.session.SessionManagementFilter@730af985, org.springframework.security.web.access.ExceptionTranslationFilter@5e6a3f72, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d4e1478]
+2020-03-25 20:03:25.337  WARN 18336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-25 20:03:25.342  INFO 18336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-25 20:03:26.466  INFO 18336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-25 20:03:27.985  INFO 18336 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2020-03-25 20:03:31.048  WARN 18336 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-03-25 20:03:31.221  INFO 18336 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-25 20:03:31.525  INFO 18336 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2020-03-25 20:03:31.594  INFO 18336 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-25 20:03:31.597  INFO 18336 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-03-25 20:03:31.597  INFO 18336 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-03-25 20:03:34.604  INFO 18336 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8085
+2020-03-25 20:03:36.652  INFO 18336 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8085. Will be trying the next url if available
+2020-03-25 20:03:36.652  WARN 18336 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8085/PhotoAppApiConfigServer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-25 20:03:37.273  INFO 18336 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-03-25 20:03:37.514  INFO 18336 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7902d08f:0/SimpleConnection@555bc4c2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59010]
+2020-03-25 20:03:37.654  INFO 18336 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2020-03-25 20:03:37.700  INFO 18336 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-25 20:03:37.839  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-25 20:03:38.070  INFO 18336 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-25 20:03:38.070  INFO 18336 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-25 20:03:38.562  INFO 18336 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-25 20:03:38.563  INFO 18336 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-25 20:03:39.944  INFO 18336 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:03:42.388  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-25 20:03:42.389  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-25 20:03:42.390  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-25 20:03:42.390  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-25 20:03:42.390  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-25 20:03:42.390  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-25 20:03:42.391  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-25 20:03:43.402  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-25 20:03:43.407  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-25 20:03:43.415  INFO 18336 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-25 20:03:43.432  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1585159423424 with initial instances count: 0
+2020-03-25 20:03:43.451  INFO 18336 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-03-25 20:03:43.454  INFO 18336 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585159423454, current=UP, previous=STARTING]
+2020-03-25 20:03:43.460  INFO 18336 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:1378a81735b685a5797f728d0dc3a42f: registering service...
+2020-03-25 20:03:43.753  INFO 18336 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.ZFhj60PPSWaxwQaHvzsphw, bound to: springCloudBus
+2020-03-25 20:03:44.272  INFO 18336 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.ZFhj60PPSWaxwQaHvzsphw.errors' has 1 subscriber(s).
+2020-03-25 20:03:44.274  INFO 18336 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.ZFhj60PPSWaxwQaHvzsphw.errors' has 2 subscriber(s).
+2020-03-25 20:03:44.556  INFO 18336 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.ZFhj60PPSWaxwQaHvzsphw'
+2020-03-25 20:03:45.680  INFO 18336 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:1378a81735b685a5797f728d0dc3a42f - registration status: 204
+2020-03-25 20:03:45.866  INFO 18336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-25 20:03:45.870  INFO 18336 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2020-03-25 20:03:50.684  INFO 18336 --- [restartedMain] c.m.p.u.P.PhotoShopUsersApplication      : Started PhotoShopUsersApplication in 58.65 seconds (JVM running for 59.564)
+2020-03-25 20:04:13.417  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-25 20:04:13.418  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-25 20:04:13.419  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-25 20:04:13.420  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-25 20:04:13.420  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-25 20:04:13.421  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-03-25 20:04:13.421  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-25 20:04:13.480  INFO 18336 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-25 20:08:42.403  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:13:42.409  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:18:42.410  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:23:42.414  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:28:42.416  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:33:42.419  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:38:42.422  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:43:42.424  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:48:42.430  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:53:42.432  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 20:58:42.445  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:03:42.453  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:08:42.458  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:13:42.464  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:18:42.472  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:23:42.475  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:28:42.477  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:33:42.487  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-25 21:38:42.495  INFO 18336 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
