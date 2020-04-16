@@ -1,0 +1,6 @@
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+COPY src/main/resources/keys/apiEncrptionKey.jks /keys/apiEncrptionKey.jks
+COPY  unlimitedJCEpolicy/*  /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/
+COPY target/PhotoShopApiConfigServer-0.0.1-SNAPSHOT.jar ConfigServer.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:dev/./urandom","-jar","ConfigServer.jar"]
