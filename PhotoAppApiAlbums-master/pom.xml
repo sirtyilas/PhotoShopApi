@@ -4,10 +4,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.2.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.martyila.photoshop</groupId>
+		<artifactId>photoshop-parent</artifactId>
+		<version>1.0</version>
 	</parent>
 	<groupId>com.appsdeveloperblog.photoapp.api.albums</groupId>
 	<artifactId>PhotoAppApiAlbums</artifactId>
@@ -40,10 +39,10 @@
 			<optional>true</optional>
 		</dependency>
 
-		<dependency>
+	<!--	<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.modelmapper</groupId>

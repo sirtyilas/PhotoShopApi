@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import feign.FeignException;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.modelmapper.spi.MatchingStrategy;
@@ -86,7 +87,8 @@ public class UsersServiceImpl implements UsersService {
 		UserEntity findByUserId = repo.findByUserId(userId);
 		if(findByUserId == null) {
 			throw new UsernameNotFoundException(userId);
-		}	
+		}
+
 		log.info("Before calling album sevice clint");
 		List<AlbumResponseModel> gertAlbums = albumsServiceClient.getAlbums(userId);
 		UserDto userDto = new ModelMapper().map(findByUserId, UserDto.class);

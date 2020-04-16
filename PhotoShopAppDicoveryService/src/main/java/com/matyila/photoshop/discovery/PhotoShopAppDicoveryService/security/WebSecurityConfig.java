@@ -1,4 +1,4 @@
-package com.matyila.photoshop.discovery.PhotoShopAppDicoveryService;
+package com.matyila.photoshop.discovery.PhotoShopAppDicoveryService.security;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

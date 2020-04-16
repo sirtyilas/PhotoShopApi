@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoAppApiAlbums-master/PhotoAppApiAlbums.iml" filepath="$PROJECT_DIR$/PhotoAppApiAlbums-master/PhotoAppApiAlbums.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PhotoShopApi.iml" filepath="$PROJECT_DIR$/.idea/PhotoShopApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoShopApiConfigServer/PhotoShopApiConfigServer.iml" filepath="$PROJECT_DIR$/PhotoShopApiConfigServer/PhotoShopApiConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoShopAppDicoveryService/PhotoShopAppDicoveryService.iml" filepath="$PROJECT_DIR$/PhotoShopAppDicoveryService/PhotoShopAppDicoveryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoShopUsers/PhotoShopUsers.iml" filepath="$PROJECT_DIR$/PhotoShopUsers/PhotoShopUsers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoShopZuulAPIGateway/PhotoShopZuulAPIGateway.iml" filepath="$PROJECT_DIR$/PhotoShopZuulAPIGateway/PhotoShopZuulAPIGateway.iml" />
+    </modules>
+  </component>
+</project>
